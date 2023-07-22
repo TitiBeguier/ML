@@ -5,7 +5,7 @@ const path = require('path');
 
 //numero de puerto
 const PORT=2000
-app.listen(PORT);
+app.listen(PORT,console.log(PORT));
 //archivos estaticos, culaquiera de los dos
 //app.use(express.static(path.resolve(__dirname,'./public')))
 app.use(express.static('public'));
