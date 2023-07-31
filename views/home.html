@@ -15,14 +15,15 @@
 <body>
 <!--logo menu-->
 <header>
-    <img src="/img/logo-mercado-liebre.svg" alt='logo mercado liebre' width="90%">
+    <div class="header-top">
+    <img src="/img/logo-mercado-liebre.svg" alt='logo mercado liebre' id="logo">
     <form class="busqueda">
         <input type="search" placeholder="Buscar productos,Marcas"  >
-        <br>
         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
-    <p align="center"><i class="fa-solid fa-hand-holding-dollar" id="iconoHeader"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav class="nav">
+    <p id="subtitulo"><i class="fa-solid fa-hand-holding-dollar" id="iconoHeader"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+</div>   
+    <nav class="nav">
             <ul class="nav">
                     <li>
                         <a href="">Ofertas</a>
@@ -59,6 +60,7 @@
     <img src="/img/img-home-banner.jpg" alt='carrusel' class="banner">
     <h4>productos</h4>
     <h4>Sección: Basado en tu última visita</h4>
+    <div class="articulos">
         <section class="tarjeta">
             <article >
                 <img src="/img/img-cafetera-moulinex.jpg" alt='carrusel' class ="fotoTarjeta">
@@ -99,7 +101,9 @@
                 <h3 class="descripcion">SmartTv Samsung 43"</h3>
             </article>
         </section>
+    </div>
         <h4>Sección de Ofertas</h4>
+        <div class="articulos">
         <section class="tarjeta" >
             <article >
                 <img src="/img/img-cafetera-moulinex.jpg" alt='carrusel' class ="fotoTarjeta">
@@ -140,6 +144,7 @@
                 <h3 class="descripcion">SmartTv Samsung 43"</h3>
             </article>
         </section>
+    </div>
         <br>
 </main>
 <!--pie de pagina-->

@@ -13,7 +13,7 @@ header{
     padding-bottom: 10px;
 }
 main{
-    background-color:#bababa;
+    background: color #5f5f5f;;
     color: #000000;
     width: 100%;
 }
@@ -38,10 +38,7 @@ h4{
     font-size: 12px;
     text-align: center;
 }
-.busqueda{
-    margin-left: 3%;
-    width: 25vw;
-}
+
 .nav{
     list-style: none;
     box-sizing: border-box;
@@ -70,12 +67,24 @@ h4{
     background-color:white;
     margin: 1.5rem;
     padding: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(100, 100, 100);
     
 }
 .fotoTarjeta{
     width: 100%;
     display: block;
     text-align: center;
+    max-width: 500px;
+}
+.articulos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+#logo{
+    width: 90%;
+    max-width: 300px;
+    display: block;
 }
 #envio{
     color:#39b54a;
@@ -92,6 +101,16 @@ h4{
     display: flex;
 }
 .parrafoFooter{
+    padding: 10px;
+}
+.subtitulo{
+    text-align: center;
+}
+.header-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
 }
 #burger-menu{
@@ -119,8 +138,24 @@ h4{
 #iconoHeader{
     color:black;
     margin-left: 5px;
+    
 }
-@media (min-width: 400px){
+.busqueda{
+    display: flex;
+    max-height: max-content;
+    background-color:#39b54a;
+
+}
+.busqueda input{
+    border: 1px solid transparent;
+    height: 24px;
+}
+.busqueda button{
+    border: 1px solid transparent;
+    background-color: white;
+    height: 24px;
+}
+ @media (min-width: 400px){
     .nav{
         display: block;
     }
@@ -130,6 +165,6 @@ h4{
     #burger-menu{
         display: none;
     }
-}
+} 
 
 
