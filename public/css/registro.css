@@ -18,42 +18,68 @@ header{
     background-color: #EAC926;
     align-items: center;
     color: #666;
-    padding-bottom: 10px;
 }
-.busqueda{
-    display: flex;
-    max-height: max-content;
-    background-color:#39b54a;
-
-}
-.busqueda input{
-    border: 1px solid transparent;
-    height: 24px;
-}
-.busqueda button{
-    border: 1px solid transparent;
-    background-color: white;
-    height: 24px;
-}
-.header-top{
+.header-top {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
-}
+    box-sizing: border-box;
+  }
+  
+  #logo {
+    width: 45%; 
+    max-width: 250px;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .busqueda {
+    width: 100px;
+    width: 40%; 
+    display: flex;
+    max-height: max-content;
+    margin: 3vw;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+  }
+  
+  .busqueda input {
+    border: 1px solid transparent;
+  }
+  
+  .busqueda button {
+    border: 1px solid transparent;
+    background-color: white;
+  }
+  
 .nav{
+    text-decoration: none;
+}
+.nav-a{
     list-style: none;
     box-sizing: border-box;
     display: none;
     padding-left: 1%;
     color: #000;
     text-decoration: none;
+    margin-bottom: 3vh;  
 }
-#logo{
-    width: 90%;
-    max-width: 300px;
-    display: block;
+.nav-b{
+    list-style: none;
+    box-sizing: border-box;
+    display: none;
+    padding-left: 1%;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 3vh;  
+}
+.nav-a a,
+.nav-b a {
+  text-decoration: none;
+  color: #000; 
 }
 #burger-menu{
     color:White;
@@ -72,6 +98,60 @@ header{
     color:black;
     margin-left: 5px;
 }
+/*----main----*/
+main{
+    background-color: #c4c4c4;
+    
+}
+.form-registro {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+.formulario{
+    padding: 5px;
+}
+.form-registro label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+.form-registro input,.form-registro select,.form-registro button {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.form-registro select {
+    height: 100px;
+  }
+  
+.form-registro input[type="submit"],
+.form-registro input[type="reset"] {
+    width: auto;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+.form-registro input[type="submit"] {
+    background-color: #2196F3;
+    color: #fff;
+  }
+  
+.form-registro input[type="submit"]:hover {
+    background-color: #0d8bf3;
+  }
+  
+.form-registro input[type="reset"] {
+    background-color: #ccc;
+  }
 /*----footer---*/
 footer{
     background-color: white;
@@ -96,10 +176,17 @@ footer{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-@media (min-width: 400px){
-
+@media (min-width: 426px){
     .nav{
         display: block;
+    }
+    .nav-a{
+        display: block;
+        text-decoration: none;
+    }
+    .nav-b{
+        display: block;
+        text-decoration: none;
     }
     #burger-menu i {
         display: none;
@@ -107,4 +194,42 @@ footer{
     #burger-menu{
         display: none;
     }
-} 
+}
+@media (min-width: 768px){
+    .header-top {
+        flex-wrap: nowrap;
+      }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        
+      }
+    .nav li{
+        margin-right: 3vh;
+        list-style: none;
+    }
+      
+      .nav-a {
+        list-style: none;
+        display: flex;
+        padding-left: 3%;
+        color: #000;
+        margin-bottom: 3vh;
+        text-decoration: none;
+      }
+      
+      .nav-b {
+        list-style: none;
+        display: flex;
+        padding-left: 1%;
+        color: #000;
+        margin-bottom: 3vh;
+        text-decoration: none;
+      }
+      .nav-a a,.nav-b a {
+        text-decoration: none;
+        color: #000; 
+      }
+}
