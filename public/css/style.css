@@ -42,8 +42,8 @@ header{
     width: 100px;
     width: 40%; 
     display: flex;
-    max-height: max-content;
-    margin: 3vw;
+    ;
+    margin: 1vw;
     justify-content: center;
     align-items: center;
     margin-right: 5vw;
@@ -109,7 +109,7 @@ header{
 }
 .banner{
     width: 100vw;
-    height: 30vh;
+    height: 20vh;
     display: block;
     margin-bottom: 5vh;
 }
@@ -228,26 +228,18 @@ footer{
     margin-bottom: 10px;
     margin-top: 10px;
 }
- @media (min-width: 426px){
-    .nav{
-        display: block;
+@media(max-width: 374px){
+    #logo{
+        max-width: 35%;
     }
-    .nav-a{
-        display: block;
-        text-decoration: none;
-    }
-    .nav-b{
-        display: block;
-        text-decoration: none;
-    }
+}
+@media (min-width: 768px){
     #burger-menu i {
         display: none;
     }
     #burger-menu{
         display: none;
     }
-}
-@media (min-width: 768px){
     .header-top {
         flex-wrap: nowrap;
       }
@@ -255,8 +247,8 @@ footer{
         display: flex;
         justify-content: space-between;
         margin-right: 5vh;
-        margin-left: 5vh;
         
+        font-size: 12px
       }
     .nav li{
         margin-right: 3vh;
@@ -270,6 +262,8 @@ footer{
         color: #000;
         margin-bottom: 3vh;
         text-decoration: none;
+        margin-right: 10px;
+        margin-left: 2vh;
       }
       
       .nav-b {
@@ -284,6 +278,19 @@ footer{
         text-decoration: none; /* Eliminamos la raya de abajo en los enlaces */
         color: #000; /* Agregamos color para mantener el estilo del texto */
       }   
+      .busqueda input{
+        display: flex;
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    .busqueda button{
+        width: 15%;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
 }
 @media (min-width: 1024px){
     .articulos{
@@ -291,6 +298,7 @@ footer{
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         gap: 20px;
         margin-right: 15px;
+        padding: 5px;
         }
         footer{
             display: flex;
@@ -305,4 +313,24 @@ footer{
             justify-content: space-around;
             flex-direction: column;
         }
+    .header-top{
+        flex-direction: row;
+
     }
+    .busqueda input{
+        display: flex;
+        width: 70%;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    .busqueda button{
+        width: 15%;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    .nav{
+        font-size: medium;
+    }
+} 

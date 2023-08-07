@@ -151,10 +151,14 @@ main{
   }
 /*----footer---*/
 footer{
-    background-color: white;
-    color: #666;
-    justify-content: center;
-    align-items: center;
+  margin-top: 10vw;
+  background-color: white;
+  color: #666;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content:hover #iconoFooter{
+  color:#39b54a;
 }
 .parrafoFooter{
     font-size: 12px;
@@ -229,4 +233,7 @@ footer{
         text-decoration: none;
         color: #000; 
       }
+}
+@media(min-width: 1024px){
+  
 }
