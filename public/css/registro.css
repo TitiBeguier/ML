@@ -46,15 +46,19 @@ header{
     margin-right: 5vw;
   }
   
-  .busqueda input {
-    border: 1px solid transparent;
-  }
-  
-  .busqueda button {
-    border: 1px solid transparent;
-    background-color: white;
-  }
-  
+  .busqueda input{
+    display: flex;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.busqueda button{
+    width: 15%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
 .nav{
     text-decoration: none;
 }
@@ -205,42 +209,63 @@ footer{
     }
 }
 @media (min-width: 768px){
-    .header-top {
-        flex-wrap: nowrap;
-      }
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 5vh;
-        margin-left: 5vh;
-        
-      }
-    .nav li{
-        margin-right: 3vh;
-        list-style: none;
-    }
-      
-      .nav-a {
-        list-style: none;
-        display: flex;
-        padding-left: 3%;
-        color: #000;
-        margin-bottom: 3vh;
-        text-decoration: none;
-      }
-      
-      .nav-b {
-        list-style: none;
-        display: flex;
-        padding-left: 1%;
-        color: #000;
-        margin-bottom: 3vh;
-        text-decoration: none;
-      }
-      .nav-a a,.nav-b a {
-        text-decoration: none;
-        color: #000; 
-      }
+  #burger-menu i {
+    display: none;
+}
+#burger-menu{
+    display: none;
+}
+.header-top {
+    flex-wrap: nowrap;
+  }
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5vh;
+    
+    font-size: 12px
+  }
+.nav li{
+    margin-right: 3vh;
+    list-style: none;
+}
+  
+  .nav-a {
+    list-style: none;
+    display: flex;
+    padding-left: 3%;
+    color: #000;
+    margin-bottom: 3vh;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 2vh;
+  }
+  
+  .nav-b {
+    list-style: none;
+    display: flex;
+    padding-left: 1%;
+    color: #000;
+    margin-bottom: 3vh;
+    text-decoration: none;
+  }
+  .nav-a a,.nav-b a {
+    text-decoration: none; /* Eliminamos la raya de abajo en los enlaces */
+    color: #000; /* Agregamos color para mantener el estilo del texto */
+  }   
+  .busqueda input{
+    display: flex;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.busqueda button{
+    width: 15%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
 }
 @media (min-width: 1024px){
   footer{
@@ -255,5 +280,25 @@ footer{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+}
+.header-top{
+  flex-direction: row;
+
+}
+.busqueda input{
+  display: flex;
+  width: 70%;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.busqueda button{
+  width: 15%;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.nav{
+  font-size: medium;
 }
 }
